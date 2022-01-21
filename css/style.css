@@ -1,0 +1,307 @@
+/* All Fonts  */
+@import url("https://fonts.googleapis.com/css2?family=Dongle:wght@300;400&family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+/* font-family: 'Dongle', sans-serif;
+font-family: 'Noto Sans', sans-serif; */
+
+/* COLORS VAERIABLES */
+:root {
+  --sibar: #f9f9f9;
+  --body: #ffffff;
+  --hover_default: #edf2f6;
+  --hire_button: #7462e1;
+  --continue_button: #24dd8a;
+}
+
+/* GLOBAL CLASS */
+.left {
+  margin-left: 10px;
+}
+.section_title {
+  font-size: 2em; /*Introduce yourself.....*/
+  font-family: "Noto Sans", sans-serif;
+  margin-bottom: 10px;
+}
+.section_content {
+  margin-left: 30px;
+  padding-right: 50px;
+}
+.margin_top_25 {
+  margin-top: 25px;
+}
+.margin_top_50 {
+  margin-top: 50px;
+}
+.margin_top_100 {
+  margin-top: 100px;
+}
+.load_more_btn {
+  padding: 10px 20px;
+  margin-top: 20px;
+  border: none;
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  border-radius: 3px;
+}
+
+/* CSS FOR ALL ELEMENTS */
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: flex;
+  background-color: var(--body);
+  font-size: 62.5%;
+}
+
+/* CSS FOR SIDEBAR  */
+.sidebar_area {
+  min-width: 150px;
+  width: 250px;
+  /* border-right: 1px solid red; */
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  font-size: 1.6em;
+  background-color: var(--sibar);
+}
+.sidebar_area .sidebar_items {
+  list-style: none;
+}
+/* TITLE AREA (LOGO,TITLE) */
+.sidebar_items .title_tab {
+  display: flex;
+  align-items: center;
+  background-color: var(--hover_default);
+  margin-right: 5px;
+  padding-left: 20px;
+  border-radius: 5px;
+  height: 55px;
+}
+.sidebar_items .title_tab .logo {
+  max-height: 40px;
+}
+.sidebar_items .title_tab .title {
+  margin-left: 10px;
+  font-family: "Noto Sans", sans-serif;
+}
+
+/* CONTENT AREA STARING */
+.content_area {
+  margin-left: 250px;
+  font-size: 1.6em; /* Default */
+}
+.content_area .hero_section {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+}
+.hero_section .section_content {
+  margin-left: 40px;
+}
+.hero_section .section_content h4 {
+  font-size: 1.8em; /*hello I'm*/
+  font-family: "Noto Sans", sans-serif;
+}
+.hero_section .section_content h1 {
+  font-size: 5em; /*Dip Sarker*/
+  font-family: "Noto Sans", sans-serif;
+  line-height: 0.8em;
+  margin-bottom: 30px;
+  margin-left: -5px;
+}
+.hero_section .section_content h3 {
+  font-size: 2em; /*Full Stack Developer*/
+  font-family: "Noto Sans", sans-serif;
+  margin-bottom: 10px;
+}
+.hero_section .section_content span {
+  font-size: 1.6em; /*Education*/
+  font-family: "Dongle", sans-serif;
+  padding: 0 10px;
+  border-radius: 50px;
+  background-color: var(--hover_default);
+}
+.hero_section .section_content .btn {
+  margin-top: 10px;
+  padding: 10px 20px;
+  border: none;
+  color: #fff;
+  font-size: 1em;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+.hero_section .section_content .btn.hire {
+  background-color: var(--hire_button);
+}
+.hero_section .section_content .btn.continue {
+  background-color: var(--continue_button);
+}
+
+/* ABOUT SECTION START  */
+.about_section {
+  width: 100%;
+}
+.about_section .section_content h2 {
+  font-size: 2em; /*Introduce yourself.....*/
+  font-family: "Noto Sans", sans-serif;
+  margin-bottom: 10px;
+}
+.about_section .section_content p {
+  font-size: 1.7em; /*My descriptton*/
+  font-family: "Dongle", sans-serif;
+  line-height: 1em;
+}
+
+/* ABOUT SECTION START  */
+.skills_section .section_content .skills_bar {
+  display: flex;
+  flex-wrap: wrap;
+}
+.skills_section .section_content .skills_bar .skill {
+  flex: 50%;
+  max-width: 450px;
+  width: 100%;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  border-radius: 3px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  padding: 10px;
+}
+.skills_section .section_content .skills_bar .skill h3 {
+  font-family: "Dongle", sans-serif;
+  font-size: 1.7em;
+}
+.skills_section .section_content .skills_bar .skill .progress_bar {
+  height: 10px;
+  width: 100%;
+  border-radius: 50px;
+  background-color: rgba(169, 169, 169, 0.329);
+}
+.skills_section .section_content .skills_bar .skill .progress_bar .progress {
+  height: 10px;
+  width: 90%;
+  background-color: rgb(94, 168, 252);
+  border-radius: 50px;
+}
+
+/* PROJECT SECITON START  */
+.project_section .section_content .tabs .tab {
+  padding: 10px 15px 7px 15px;
+  border: 0;
+  background-color: #fff;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px,
+    rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+  margin-right: 10px;
+  font-family: "Dongle", sans-serif;
+  font-size: 1.5em;
+  line-height: 15px;
+  border-radius: 3px;
+}
+.project_section .section_content .projects_area {
+  display: flex;
+  flex-wrap: wrap;
+}
+.project_section .section_content .projects_area .project {
+  height: 235px;
+  max-width: 300px;
+  width: 100%;
+  margin-right: 10px;
+  margin-top: 10px;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px,
+    rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+  border-radius: 10px 10px 0 0;
+}
+.projects_area .project .img_area {
+  width: 100%;
+  height: 170px;
+  border-radius: 10px 10px 0 0;
+}
+.projects_area .project .img_area img {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+  object-fit: contain;
+}
+.projects_area .project .project_info {
+  padding-left: 10px;
+}
+.projects_area .project .project_info h4 {
+  font-family: "Noto Sans", sans-serif;
+  margin-top: 10px;
+}
+.projects_area .project .project_info a {
+  text-decoration: none;
+  color: grey;
+  font-family: "Dongle", sans-serif;
+  font-size: 1.5em;
+  margin-right: 10px;
+}
+.projects_area .project .project_info a:hover {
+  color: rgba(87, 94, 94, 0.664);
+}
+
+/* BOLOG SECTION START  */
+.blog_section .section_content .posts .post {
+  padding: 10px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+.section_content .posts .post small {
+  font-family: "Dongle", sans-serif;
+  font-size: 1.6em;
+  color: #b8b8b8;
+  line-height: 0;
+}
+.section_content .posts .post h2 {
+  font-family: "Noto Sans", sans-serif;
+  margin-bottom: 15px;
+}
+.section_content .posts .post p {
+  font-family: "Dongle", sans-serif;
+  line-height: 0;
+  margin-bottom: 20px;
+  font-size: 1.6em;
+  color: #585858cc;
+}
+.section_content .posts .post a {
+  text-decoration: none;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 1em;
+}
+
+/* FOOTER SECTION START  */
+footer {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  padding: 0 40px;
+}
+footer img {
+  width: 40px;
+}
+footer h3 {
+  margin-right: auto;
+  font-family: "Noto Sans", sans-serif;
+  margin-left: 10px;
+}
+footer a {
+  margin-left: 10px;
+  color: #b8b8b8;
+}
+footer a:hover {
+  margin-left: 10px;
+  color: #727272;
+}
+footer p {
+  font-family: "Dongle", sans-serif;
+  font-size: 1.6em;
+  color: #818181;
+}
+footer i {
+  font-size: 1.5em;
+}

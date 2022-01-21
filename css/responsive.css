@@ -1,0 +1,10 @@
+@media only screen and (max-width: 950px) {
+  .sidebar_area {
+    top: 0;
+    left: -250px;
+    transition: 1s;
+  }
+  .content_area {
+    margin-left: 10px;
+  }
+}
