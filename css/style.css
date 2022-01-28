@@ -66,6 +66,8 @@ body {
   left: 0;
   font-size: 1.6em;
   background-color: var(--sibar);
+  transition: 0.5s;
+  z-index: 1;
 }
 .sidebar_area .sidebar_items {
   list-style: none;
@@ -113,6 +115,17 @@ body {
   display: flex;
   height: 100vh;
   align-items: center;
+  position: relative;
+}
+.hero_section .hamburger_btn {
+  position: absolute;
+  top: 15px;
+  right: 0;
+  display: none;
+}
+.hero_section .hamburger_btn i {
+  color: #b8b8b8;
+  font-size: 1.8em;
 }
 .hero_section .section_content {
   margin-left: 40px;
