@@ -87,13 +87,29 @@ body {
   margin-left: 10px;
   font-family: "Noto Sans", sans-serif;
 }
+.sidebar_items .item {
+  padding: 10px 20px;
+}
+.sidebar_items .item:hover {
+  background-color: var(--hover_default);
+}
+.sidebar_items .item a {
+  color: black;
+  text-decoration: none;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 600;
+  font-size: 0.8em;
+}
+.sidebar_items .item i {
+  margin-right: 10px;
+}
 
 /* CONTENT AREA STARING */
-.content_area {
+.all_section {
   margin-left: 250px;
   font-size: 1.6em; /* Default */
 }
-.content_area .hero_section {
+.all_section .hero_section {
   display: flex;
   height: 100vh;
   align-items: center;
@@ -200,6 +216,7 @@ body {
   font-size: 1.5em;
   line-height: 15px;
   border-radius: 3px;
+  margin-bottom: 10px;
 }
 .project_section .section_content .projects_area {
   display: flex;
@@ -214,6 +231,7 @@ body {
   box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px,
     rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
   border-radius: 10px 10px 0 0;
+  align-items: stretch;
 }
 .projects_area .project .img_area {
   width: 100%;
@@ -260,6 +278,7 @@ body {
 .section_content .posts .post h2 {
   font-family: "Noto Sans", sans-serif;
   margin-bottom: 15px;
+  font-size: 1.4em;
 }
 .section_content .posts .post p {
   font-family: "Dongle", sans-serif;
